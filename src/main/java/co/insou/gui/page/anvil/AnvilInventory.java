@@ -26,14 +26,10 @@ public abstract class AnvilInventory implements GUIInventory {
                 return new Anvil_v1_8_R1(plugin, player);
             case "v1_8_R2":
                 return new Anvil_v1_8_R2(plugin, player);
-            case "v1_8_R3":
-                return new Anvil_v1_8_R3(plugin, player);
-            case "v1_9_R1":
-                return new Anvil_v1_9_R1(plugin, player);
-            case "v1_9_R2":
-                return new Anvil_v1_9_R2(plugin, player);
             case "v1_10_R1":
                 return new Anvil_v1_10_R1(plugin, player);
+            case "v1_12_R1":
+                return new Anvil_v1_12_R1(plugin, player);
         }
         throw new VersionUnsupportedException("Your version was not found! Are you running before 1.8 or after 1.10.2?");
     }
